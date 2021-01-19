@@ -47,7 +47,42 @@
             </div>
         
         </div>
-    
+    <script>
+        var oneBtn = document.getElementById('one');
+        var twoBtn = document.getElementById('two');
+        var threeBtn = document.getElementById('three');
+        var fourBtn = document.getElementById('four');
+        var fiveBtn = document.getElementById('five');
+        var sixBtn = document.getElementById('six');
+        var sevenBtn = document.getElementById('seven');
+        var eightBtn = document.getElementById('eight');
+        var nineBtn = document.getElementById('nine');
+        var zeroBtn = document.getElementById('zero');
+        
+        var decimalBtn = document.getElementById('decimal');
+        var clearBtn = document.getElementById('clear');
+        var screenOutput = document.getElementById('screen');
+        
+        var calcibtn = document.getElementsByClassName('digit')
+        var operatorbtn = document.getElementsByClassName('operator')
+        
+        var updateDisplayValue = <clickObj> => {
+            
+        }
+        
+        for(int i = 0; i < calcibtn.length; i++)
+        {
+            calcibtn[i].addEventListener('click', updateDisplayValue, false)
+            
+        }
+            for(int i = 0; i < operatorbtn.length; i++)
+            {
+                operatorbtn[i].addEventListener('click', performOperation, false)
+
+                
+            }
+
+    </script>
     
     </body>
 </html>
